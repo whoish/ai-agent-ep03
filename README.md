@@ -16,18 +16,31 @@
 | [`EP03_大綱.md`](EP03_大綱.md) | 本集大綱與每段現場 demo 腳本 |
 | [`EP03_教學檔案處理_工具列表.md`](EP03_教學檔案處理_工具列表.md) | 老師的 Python 工具清單（痛點／套件／一句話） |
 | [`EP03_教學檔案處理_工具列表.pdf`](EP03_教學檔案處理_工具列表.pdf) | 上面清單的一頁式 PDF，方便列印／下載 |
-| [`AGENT_SETUP_教學檔案處理工具包.md`](AGENT_SETUP_教學檔案處理工具包.md) | **給 AI Agent 讀的自動安裝檔** |
+| [`AGENT_SETUP_教學檔案處理工具包.md`](AGENT_SETUP_教學檔案處理工具包.md) | **給 AI Agent 讀的安全安裝指南** |
+| [`install_windows.ps1`](install_windows.ps1) | Windows 核心工具自動安裝與驗證腳本 |
+| [`requirements-core.txt`](requirements-core.txt) | 已篩選的核心 Python 套件清單 |
 | [`EP03_Python範例.md`](EP03_Python範例.md) | 完整工具地圖與選用說明 |
 | [`make_pdf.py`](make_pdf.py) | 重新產生 PDF 的腳本 |
 
-## 🚀 一鍵安裝所有工具（重點！）
+## 🚀 一鍵安裝核心工具（重點！）
 
 把 [`AGENT_SETUP_教學檔案處理工具包.md`](AGENT_SETUP_教學檔案處理工具包.md) 交給你的 AI Agent
 （Claude Code / Codex / Antigravity / OpenCode 都可以），然後說：
 
-> 「讀這份檔案，幫我把裡面的 Python 套件都安裝好。」
+> 「讀這份檔案，只安裝裡面的核心工具，選用工具先不要裝。」
 
-你的 Agent 就會自動偵測環境、安裝套件、處理系統相依並回報結果。
+你的 Agent 會執行同一支 PowerShell 腳本，以 Python 3.12 建立本 repo 專用的 `.venv`、
+安裝 10 項核心工具並驗證。OCR、影音、Office COM 等進階工具不會自動安裝，
+避免初學者卡在系統相依或讓 Agent 反覆排錯、浪費 Token。
+
+也可以在 Windows PowerShell 直接執行：
+
+```powershell
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File ".\install_windows.ps1"
+```
+
+> Claude Code、Codex App、Antigravity、OpenCode 在 Windows 原生模式都可使用。
+> 若 OpenCode 跑在 WSL，需在 WSL 另建 Linux Python 環境，不能共用 Windows `.venv`。
 
 ## 🧰 工具清單速覽
 

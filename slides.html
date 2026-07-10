@@ -393,7 +393,7 @@ tr:hover td { background: rgba(34,224,255,0.1); }
     <div class="card green">
       <div class="card-icon">📦</div>
       <div class="card-title">會裝工具</div>
-      <div class="card-body">缺套件就用 pip 自己裝；複雜工具（如 ffmpeg）也裝得起來。</div>
+      <div class="card-body">缺 Python 套件時裝進專案環境；ffmpeg 等系統工具要另外確認，不預設安裝。</div>
     </div>
   </div>
   <div class="highlight" style="margin-top:var(--s2)">
@@ -415,7 +415,7 @@ tr:hover td { background: rgba(34,224,255,0.1); }
 2. 標出<span class="key">不及格</span>的同學
 3. 用 Python 跑，把結果存成一份<span class="key">新的 Excel</span>
 </div>
-  <p class="sub" style="margin-top:var(--s3)">鏡頭重點：它自己寫 Python、自己跑、必要時自己 <code>pip install</code> 缺的套件，最後丟成品給你。完全不用你懂程式。</p>
+  <p class="sub" style="margin-top:var(--s3)">鏡頭重點：它自己寫 Python、自己跑，必要時用 <code>uv</code> 把缺的套件裝進專案環境，最後交付成品。</p>
   <p class="note" style="margin-top:var(--s3)">口訣：<b>你不用會寫程式，因為它會寫、也會跑。</b></p>
 </div>
 </section>
@@ -583,8 +583,8 @@ tr:hover td { background: rgba(34,224,255,0.1); }
         <div class="card-body">Word／Excel／PPT／PDF 全收錄，PDF 一頁印好</div>
       </div>
       <div class="card accent-2" style="margin-bottom:14px">
-        <div class="card-title">🤖 給 Agent 的一鍵安裝檔</div>
-        <div class="card-body">丟給你的 Agent，自動裝好所有套件</div>
+        <div class="card-title">🤖 給 Agent 的核心安裝檔</div>
+        <div class="card-body">只裝核心套件；OCR、影音與 Office 工具按需求選裝</div>
       </div>
       <div class="card green">
         <div class="card-title">📑 這份簡報 + 完整大綱</div>
