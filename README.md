@@ -52,10 +52,9 @@ powershell.exe -NoProfile -ExecutionPolicy Bypass -File ".\install_windows.ps1"
 - EP01：用 Agent 來學習 Agent
 - EP02：使用 Agent 前，你一定要知道的基本觀念
 - **EP03：Agent 的手腳（本集）**
-- EP04（預告）：連接外部工具（MCP）
+- [EP04：連接外部工具（MCP）](https://github.com/mathruffian-dot/ai-agent-ep04)
 - EP05（預告）：技能（Skill）
 
 ---
 
 > 歡迎自由下載、分享、改作。製作：三師爸 Sense Bar
-</content>
