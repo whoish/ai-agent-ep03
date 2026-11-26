@@ -6,6 +6,6 @@ pypdf==6.14.2
 PyMuPDF==1.28.0
 reportlab==5.0.0
 Pillow==12.3.0
-matplotlib==3.11.0
+matplotlib==3.11.1
 qrcode[pil]==8.2
 markitdown[pdf,docx,pptx,xlsx]==0.1.6
